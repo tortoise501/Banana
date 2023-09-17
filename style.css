@@ -56,22 +56,21 @@ table{
     margin-right: auto;
 }
 
-
+a {
+    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: yellow;
+}
 a:active {
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     color:black;
 }
 a:visited {
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    color:orange;
+    color:yellowgreen;
 }
 a:hover {
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    color:green;
-}
-a:link {
-    text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    color:yellow;
+    color:orange;
 }
 
 
