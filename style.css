@@ -26,6 +26,17 @@ header{
     font-size: 30px;
     line-height: 0px;
 }
+nav {
+    background-color: yellow;
+    text-wrap: wrap;
+    position: fixed;
+    width: 20%;
+    min-width: 240px;
+    font-size: 20px;
+    outline-style: dotted;
+    outline-width: 6px;
+    outline-color: black;
+}
 
 /* for padding after link */
 html {
@@ -55,6 +66,12 @@ table{
     margin-left: auto;
     margin-right: auto;
 }
+ol{
+    padding-left: 75px;
+}
+img{
+    outline: dotted;
+}
 
 a {
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
@@ -78,12 +95,4 @@ a:hover {
 .NIE{
     color: red;
     text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-.navigation {
-    position: fixed;
-    width: 20%;
-    font-size: 30px;
-    outline-style: dotted;
-    outline-width: 6px;
-    outline-color: black;
 }
