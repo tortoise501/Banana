@@ -5,11 +5,12 @@
 	<link rel="stylesheet" href="style.css">
 </head> 
 <body>
-	<header >
-		<h1><span class="banana">Banana</span> page</h1>
+	<header>
+		<button class="openNavButton" onclick="changeNavState()">Navigation</button>
+		<div class="center"><h1><span class="banana">Banana</span> page</h1></div>
 	</header>
 
-	<nav>
+	<nav id="nav">
 		<ul>
 			<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">TOP SECRET</a></li>
 			<li><a rel="noopener" target="_self" href="#Banany">Banany</a></li>
@@ -25,7 +26,7 @@
 			<li><a rel="noopener" target="_self" href="#opisy">Opisy</a></li>
 		</ul>
 	</nav>
-	<main>
+	<main id = main>
 		<article>
 			<a id = "Banany"></a>
 			<h2><strong class="banana">Banany</strong></h2>
@@ -275,5 +276,29 @@
 	<footer>
 	<p><small>&copy; 2023, Danylo Shtukin, <a href="https://www.fubiz.net/en/2016/07/15/hilarious-and-surprising-bananas-gifs/">more information on <span class = "banana">banana</span> art</a></small></p>
 	</footer>
+
+
+
+
+
+	<script>
+		let navPanel = document.getElementById("nav");
+		let mainPanel = document.getElementById("main");
+		let isNavRetracted = true;
+		function changeNavState(){
+			if(!isNavRetracted)
+			{
+				isNavRetracted = true;
+				navPanel.style.display = "block";
+				mainPanel.style.marginLeft = "22%";
+			}
+			else
+			{
+				isNavRetracted = false;
+				navPanel.style.display = "none";
+				mainPanel.style.marginLeft = "0%";
+			}
+		}
+	</script>
 </body> 
 </html>
